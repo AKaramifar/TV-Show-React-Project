@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css?family=Racing+Sans+One|Faster+One|Bebas+Neue|Hind:wght|Marmelad|Scada|Concert+One|Stardos+Stencil:wght@700&display=swap");
+:root {
+  --HeaderBackgroundColor: #24292e;
+  --HeaderBoxShadowColor: #1b1c1e;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Header */
+.Div_Header_CSS {
+  width: auto;
+  height: 120px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+  border-left: 3px solid #00a8ff;
+  background-color: var(--HeaderBackgroundColor);
+  box-shadow: 0px 0px 0px 1px var(--HeaderBoxShadowColor);
+}
+/* Logo */
+.Div_Logo_CSS {
+  width: 100px;
+  height: 100px;
+}
+.Div_Logo_Box_CSS {
+  width: 100%;
+  height: 60px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  letter-spacing: 5px;
+  margin-top: 23px;
+  border-radius: 5px;
+  border: 2px solid #FFCA28;
+  transition: 200ms;
+}
+.Div_Logo_Box_CSS:hover {
+  background-color: rgb(46, 49, 53);
+  cursor: pointer;
+}
+.P_CYF_CSS {
+  margin-left: 2px;
+  animation: CYF-C-Color infinite 2s;
+  font-family: "Concert One", cursive;
+  font-size: 28px;
+  color: #ecf0f1;
+}
+@keyframes CYF-C-Color {
+  0% {
+    color: #ecf0f1;
+  }
+  50% {
+    color: #ff5e57;
+  }
+  100% {
+    color: #ecf0f1;
+  }
+}
+.Div_Logo_Stand_CSS {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.Div_Logo_stand_1_CSS {
+  width: 30px;
+  height: 10px;
+  margin-left: 4px;
+  border-bottom-left-radius: 5px;
+  border-bottom: 2px solid #FFCA28;
+}
+.Div_Logo_stand_2_CSS {
+  width: 30px;
+  height: 10px;
+  border-bottom-right-radius: 5px;
+  border-bottom: 2px solid #FFCA28;
+  border-left: 2px solid #FFCA28;
+}
+/* Title */
+.Div_Title_CSS {
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+.P_Title_CSS {
+  margin-left: 30px;
+  font-size: 33px;
+  letter-spacing: 5px;
+  color: #ecf0f1;
+  font-family: "Racing Sans One", cursive;
+}
+/* Theme */
+.Div_Theme_CSS {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.P_Theme_CSS {
+  color: #ecf0f1;
+  display: flex;
+  padding: 5px;
+  font-family: "Concert One", cursive;
+  font-size: 16px;
+  letter-spacing: 1px;
+  flex-direction: row;
+  align-items: center;
+  transition: 200ms;
+}
+.P_Theme_CSS:hover{
+  color: #55c6ff;
+  cursor: pointer;
+}
+.P_Theme_CSS:hover > .I_Sun_CSS{
+  text-shadow: 0px 0px 2px #FFCA28;
+}
+.I_Sun_CSS{
+  color: #FFCA28;
+  margin-top: 3px;
+  transition: 200ms;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Search */
+.Div_Search_CSS {
+  width: auto;
+  height: 50px;
+  background-color: var(--HeaderBackgroundColor);
+  box-shadow: 0px 0px 0px 1px var(--HeaderBoxShadowColor);
 }
